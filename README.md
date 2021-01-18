@@ -1,15 +1,16 @@
-#j
-    ##j
+# README Generator
+    ## A readme generator that generates a unique and professional readme for your project.
 
 
-    ##Installation: undefined
+    ## Installation undefined
 
-    ##Usage: j
+    ## Usage For easy readme md
 
-    ##Contributions: j
+    ## Contributions None
 
-    ##Tests: j
+    ## Tests npm test
 
-    ##Questions: j j
+    ## Questions 
+    You can contact me here: emmabauta@gmail.com emmabauta for questions about this project.
 
-    ##License: APACHE
+    ## License None
