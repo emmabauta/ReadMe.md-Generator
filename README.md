@@ -1,16 +1,3 @@
 # README Generator
-    ## A readme generator that generates a unique and professional readme for your project.
-
-
-    ## Installation undefined
-
-    ## Usage For easy readme md
-
-    ## Contributions None
-
-    ## Tests npm test
-
-    ## Questions 
-    You can contact me here: emmabauta@gmail.com emmabauta for questions about this project.
-
-    ## License None
+A ReadMe generator that uses Node to generate a readme for the user via integrated terminal. 
+Click the link to my video on how to run the app here:https://drive.google.com/file/d/15nS7XRdajHzfiOIrGMOhobQ0Mj7woD4q/view
