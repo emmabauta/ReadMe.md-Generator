@@ -26,6 +26,22 @@ const questions = [
         message: 'Describe your project.',
     },
     {
+        type: 'list',
+        name: 'license',
+        choices: ['APACHE','GNU','BSD', 'None'],
+        default: 'None', 
+    },
+    {
+        type: 'input',
+        name: 'intallation instructions',
+        message: 'What are the installation instructions?'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Enter usage information',
+    },
+    {
         type: 'input', 
         name: 'contributions',
         message: 'Would you like others to contribute to your project?',
@@ -39,14 +55,18 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(README, data) {
+    fs.writeFile("README.md", generateMarkdown(data), (err) =>
+              err ? console.log(err) : console.log('README.md successfully created'));
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log('Generating ReadMe...');
-        writeToFile('README.md', generateMarkdown({...inquirerResponses}));
         console.log(inquirerResponses);
+        //generateMarkdown(inquirerResponses);
+        writeToFile('README', inquirerResponses)
     });
 }
 
